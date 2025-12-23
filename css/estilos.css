@@ -1,38 +1,4 @@
 @charset "UTF-8";
-/* —————————————— General —————————————— */
-* {
-  font-family: "Alan Sans", sans-serif !important;
-  scroll-behavior: smooth;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  list-style: none;
-}
-
-p {
-  color: #754727;
-  font-weight: 500;
-}
-
-h1 {
-  color: #361c0b;
-}
-
-h2 {
-  color: #FFF;
-}
-
-h3 {
-  color: #532f1f;
-}
-
 /* —————————————— Header —————————————— */
 .logotipo {
   width: 10rem;
@@ -88,6 +54,144 @@ h3 {
 .index-header-boton:hover {
   background-color: #CDA470;
   color: #361c0b;
+}
+
+/* —————————————— Footer —————————————— */
+footer {
+  background-color: #EDD495;
+  padding: 1px 10px;
+  border: 20px #EDD495;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+footer h2 {
+  color: #532f1f;
+  font-size: clamp(1.5rem, 1.325rem + 0.9vw, 1.75rem);
+  font-weight: bold;
+  margin: 10px;
+}
+footer a {
+  color: #754727;
+  font-weight: bold;
+  font-size: large;
+}
+footer img {
+  width: 4rem;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* ———— Redes ———— */
+.footer-redes {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding-inline-start: 1rem;
+}
+.footer-redes li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer-redes img {
+  width: 2rem;
+  height: auto;
+  align-items: center;
+  display: block;
+}
+
+.footer-nav a {
+  color: #532f1f;
+  font-weight: bold;
+  font-size: large;
+}
+
+/* ———— Eventos ———— */
+.main-eventos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(4 1fr));
+  grid-template-rows: repeat(2 200px);
+  grid-template-areas: "principal principal principal principal" "destacado destacado destacado secundario";
+}
+
+.main-event {
+  background-color: rgb(255, 245, 217);
+  padding: 10px;
+  border: 20px rgb(255, 245, 217);
+  border-radius: 10px;
+  margin: 8px 5px;
+}
+
+.evento-principal {
+  grid-area: principal;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 1rem;
+  min-width: 0;
+}
+.evento-principal img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.evento-principal-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.evento-destacado {
+  grid-area: destacado;
+}
+
+.evento-secundario {
+  grid-area: secundario;
+}
+
+.evento-titulo {
+  font-size: 1.5rem;
+}
+
+.evento-fecha {
+  font-size: 1.2rem;
+}
+
+.evento-detalle {
+  font-size: 1rem;
+}
+
+/* —————————————— General —————————————— */
+* {
+  font-family: "Alan Sans", sans-serif !important;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+}
+
+p {
+  color: #754727;
+  font-weight: 500;
+}
+
+h1 {
+  color: #361c0b;
+}
+
+h2 {
+  color: #FFF;
+}
+
+h3 {
+  color: #532f1f;
 }
 
 /* —————————————— Main —————————————— */
@@ -163,110 +267,6 @@ h3 {
 .main-card-detalle {
   font-style: italic;
   color: #CDA470;
-}
-
-/* ———— Eventos ———— */
-.main-eventos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(4 1fr));
-  grid-template-rows: repeat(2 200px);
-  grid-template-areas: "principal principal principal principal" "destacado destacado destacado secundario";
-}
-
-.main-event {
-  background-color: rgb(255, 245, 217);
-  padding: 10px;
-  border: 20px rgb(255, 245, 217);
-  border-radius: 10px;
-  margin: 8px 5px;
-}
-
-.evento-principal {
-  grid-area: principal;
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 1rem;
-  min-width: 0;
-}
-.evento-principal img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.evento-principal-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.evento-destacado {
-  grid-area: destacado;
-}
-
-.evento-secundario {
-  grid-area: secundario;
-}
-
-.evento-titulo {
-  font-size: 1.5rem;
-}
-
-.evento-fecha {
-  font-size: 1.2rem;
-}
-
-.evento-detalle {
-  font-size: 1rem;
-}
-
-/* —————————— Footer —————————— */
-footer {
-  background-color: #EDD495;
-  padding: 1px 10px;
-  border: 20px #EDD495;
-  border-radius: 5px;
-  margin-top: 1rem;
-}
-footer h2 {
-  color: #532f1f;
-  font-size: clamp(1.5rem, 1.325rem + 0.9vw, 1.75rem);
-  font-weight: bold;
-  margin: 10px;
-}
-footer a {
-  color: #754727;
-  font-weight: bold;
-  font-size: large;
-}
-footer img {
-  width: 4rem;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-/* ———— Redes ———— */
-.footer-redes {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  padding-inline-start: 1rem;
-}
-.footer-redes li {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.footer-redes img {
-  width: 2rem;
-  height: auto;
-  align-items: center;
-  display: block;
-}
-
-.footer-nav a {
-  color: #532f1f;
-  font-weight: bold;
-  font-size: large;
 }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,57 @@
+/* ———— Eventos ———— */
+
+.main-eventos-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(4 1fr));
+    grid-template-rows: repeat(2 200px);
+    grid-template-areas: 
+    "principal principal principal principal"
+    "destacado destacado destacado secundario";
+}
+
+.main-event{
+    background-color: rgb(255, 245, 217);
+    padding: 10px;
+    border: 20px rgb(255, 245, 217);
+    border-radius: 10px;
+    margin: 8px 5px;
+}
+
+.evento-principal {
+    grid-area: principal;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 1rem;
+    min-width: 0;
+
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;        
+    }
+}
+
+.evento-principal-info{
+    display: flex;
+    flex-direction: column; 
+}
+
+.evento-destacado{
+    grid-area: destacado;
+}
+
+.evento-secundario{
+    grid-area: secundario;
+}
+
+.evento-titulo{
+    font-size: 1.5rem;
+}
+
+.evento-fecha{
+    font-size: 1.2rem;
+}
+
+.evento-detalle{
+    font-size: 1rem;
+}
