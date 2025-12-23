@@ -6,6 +6,12 @@
 
 /* —————————————— General —————————————— */
 
+$light-yellow:rgb(255, 245, 217);
+$light-brown: #CDA470;
+$brown: #754727;
+$dark-brown: #532f1f;
+$darker-brown: #361c0b;
+
 *{
     font-family: "Alan Sans", sans-serif !important;
     scroll-behavior: smooth;
@@ -23,12 +29,12 @@ ul{
 }
 
 p{
-    color: #754727;
+    color: $brown;
     font-weight: 500;
 }
 
 h1{
-    color: #361c0b;
+    color: $darker-brown;
 }
 
 
@@ -37,7 +43,7 @@ h2{
 }
 
 h3{
-    color: #532f1f;
+    color: $dark-brown;
 }
 
 
@@ -45,7 +51,7 @@ h3{
 
 .main-title{
     @extend %main-flex;
-    background-color: #754727;
+    background-color: $brown;
     border-radius: 5px;
     margin-top: 1rem;
 }
@@ -67,9 +73,9 @@ h3{
 }
 
 .main-card{
-    background-color: rgb(255, 245, 217);
+    background-color: $light-yellow;
     width: 20rem;
-    @include paddingAndBorder(10px, 20px rgb(255, 245, 217), 10px);
+    @include paddingAndBorder(10px, 20px $light-yellow, 10px);
     margin: 8px 5px;
 
     h3, p{
@@ -78,16 +84,16 @@ h3{
     }
 
     button{
-        background-color: #754727;
-        color: rgb(255, 245, 217);
+        background-color: $light-brown;
+        color: $light-yellow;
         width: 100%;
         font-size: medium;
         font-weight: 600;
-        @include paddingAndBorder(6px, 20px  #CDA470, 5px);
+        @include paddingAndBorder(6px, 20px  $light-brown, 5px);
         
         &:hover{
-            background-color: #CDA470;
-            color: #361c0b;
+            background-color: $light-brown;
+            color: $darker-brown;
         }
     }
 }
@@ -105,5 +111,5 @@ h3{
 
 .main-card-detalle{
     font-style: italic;
-    color: #CDA470;
+    color: $light-brown;
 }

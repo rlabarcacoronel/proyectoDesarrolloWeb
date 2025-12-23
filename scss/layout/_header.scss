@@ -1,5 +1,10 @@
 /* —————————————— Header —————————————— */
 
+$light-brown: #CDA470;
+$brown: #754727;
+$darker-brown: #361c0b;
+
+
 .logotipo{
     width: 10rem;
     margin-left: 10px;
@@ -17,7 +22,7 @@
 .contenedor-superior-header{
     display: flex;
     align-items: center;
-    background-color: #754727;
+    background-color: $brown;
     border-radius: 5px 5px 0px 0px;
 }
 
@@ -46,15 +51,15 @@
 }
 
 .index-header-boton{
-    background-color: #754727;
+    background-color: $brown;
     padding: 8px 20px;
     color: #FFF;
     margin: 10px 10px;
-    border: 2px #754727;
+    border: 2px $brown;
     border-radius: 5px;
 
     &:hover{
-        background-color: #CDA470;
-        color: #361c0b;
+        background-color: $light-brown;
+        color: $darker-brown;
     }
 }

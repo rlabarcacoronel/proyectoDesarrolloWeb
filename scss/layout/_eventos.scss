@@ -1,5 +1,7 @@
 /* ———— Eventos ———— */
 
+$light-yellow:rgb(255, 245, 217);
+
 .main-eventos-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(4 1fr));
@@ -10,9 +12,9 @@
 }
 
 .main-event{
-    background-color: rgb(255, 245, 217);
+    background-color: $light-yellow;
     padding: 10px;
-    border: 20px rgb(255, 245, 217);
+    border: 20px $light-yellow;
     border-radius: 10px;
     margin: 8px 5px;
 }
