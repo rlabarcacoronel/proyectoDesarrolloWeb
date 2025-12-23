@@ -1,0 +1,5 @@
+@mixin paddingAndBorder($padding,$border,$border-radius){
+    padding: $padding;
+    border: $border;
+    border-radius: $border-radius;
+}

@@ -160,6 +160,13 @@ footer img {
   font-size: 1rem;
 }
 
+.main-card-flex, .main-title-container, .main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* —————————————— General —————————————— */
 * {
   font-family: "Alan Sans", sans-serif !important;
@@ -196,20 +203,12 @@ h3 {
 
 /* —————————————— Main —————————————— */
 .main-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: #754727;
   border-radius: 5px;
   margin-top: 1rem;
 }
 
 .main-title-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin-top: 2rem;
 }
 .main-title-container h3, .main-title-container p {
@@ -251,11 +250,6 @@ h3 {
 }
 
 .main-card-flex {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 1rem;
 }
 .main-card-flex img {

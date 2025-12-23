@@ -1,6 +1,8 @@
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/eventos";
+@import "./utilities/extends";
+@import "./utilities/mixins";
 
 /* —————————————— General —————————————— */
 
@@ -42,20 +44,14 @@ h3{
 /* —————————————— Main —————————————— */
 
 .main-title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @extend %main-flex;
     background-color: #754727;
     border-radius: 5px;
     margin-top: 1rem;
 }
 
 .main-title-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @extend %main-flex;
     margin-top: 2rem;
 
     h3, p{
@@ -73,9 +69,7 @@ h3{
 .main-card{
     background-color: rgb(255, 245, 217);
     width: 20rem;
-    padding: 10px;
-    border: 20px rgb(255, 245, 217);
-    border-radius: 10px;
+    @include paddingAndBorder(10px, 20px rgb(255, 245, 217), 10px);
     margin: 8px 5px;
 
     h3, p{
@@ -89,9 +83,7 @@ h3{
         width: 100%;
         font-size: medium;
         font-weight: 600;
-        padding: 6px;
-        border: 20px  #CDA470;
-        border-radius: 5px;
+        @include paddingAndBorder(6px, 20px  #CDA470, 5px);
         
         &:hover{
             background-color: #CDA470;
@@ -101,11 +93,7 @@ h3{
 }
 
 .main-card-flex{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @extend %main-flex;
     margin-bottom: 1rem;
 
     img{
