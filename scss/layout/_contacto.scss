@@ -1,0 +1,60 @@
+/* ———— Contacto ———— */
+
+@import "../utilities/extends";
+@import "../utilities/mixins";
+
+$light-yellow:rgb(255, 245, 217);
+$yellow: #EDD495;
+$brown: #754727;
+$dark-brown: #532f1f;
+
+.form-card{
+    @extend %card-base;
+    @include paddingAndBorder(10px, 20px $light-yellow, 10px);
+    width: 40rem;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 1rem 1.5rem;
+
+  max-width: 600px;
+  width: min(600px, 100%);
+  box-sizing: border-box;
+
+  label {
+    text-align: right;
+    padding-top: 0.5rem;
+    font-weight: 500;
+  }
+
+  input:not([type="button"]), select, textarea {
+    width: 100%;
+    padding: 0.4rem 0.6rem;
+    border: 1px solid $yellow;
+    border-radius: 4px;
+    font-family: inherit;
+    box-sizing: border-box;
+
+    &:focus {
+      outline: none;
+      border-color: $brown;
+    }
+  }
+
+  input[type="button"] {
+    grid-column: 2;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  input[type="submit"] {
+    grid-column: 2;
+    width: fit-content;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+  }
+}

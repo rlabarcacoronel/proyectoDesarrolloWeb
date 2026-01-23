@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio Entrega Final Desarrollo Web - Rocío Labarca Coronel">
+    <title>Restaurante El Tesoro - Contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <header class="index-header">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+
+        <div class="contenedor-superior-header">            
+            <img src="../img/logo.png" alt="Logo Restaurante El Tesoro" class="logotipo" id="inicio">
+
+            <nav class="index-nav">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./eventos.html">Eventos</a></li>
+                    <li><a href="./sucursales.html">Sucursales</a></li>
+                    <li><a href="./reviews.html">Reseñas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#redes">Nuestras Redes</a></li>
+                </ul>
+            </nav>          
+        </div>
+
+        <section class="contenedor-inferior-header">
+            <h1>Restaurante "El Tesoro"</h1>
+            <p>Para toda la familia, una gran variedad de platillos de la más alta calidad elaborada a base de ingredientes autóctonos.</p>
+            <a href="../index.html" class="index-header-boton">Volver al inicio</a>
+        </section>
+    </header>
+
+    <main>
+
+        <div class="main-title" id="contacto">
+            <h2>Contáctanos</h2>
+        </div>
+
+        <!-- Formulario de Contacto -->
+
+        <div class="main-container-flex">  
+            <article class="form-card" id="datoscontacto">
+                    <form action="/submit" method="post" class="formulario">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombrecliente" id="nombrecliente">
+
+                        <label for="nombre">Correo de Contacto:</label>
+                        <input type="text" name="correocliente" id="correocliente">
+
+                        <label for="sucursal">Sucursal:</label>
+                        <select name="listasucursales" id="listasucursales">
+                            <option value="0">-</option>
+                            <option value="1">Antofagasta</option>
+                            <option value="2">La Serena</option>
+                            <option value="3">Santiago</option>
+                            <option value="4">Viña del Mar</option>
+                            <option value="5">Puerto Montt</option>
+                        </select>
+
+                        <label for="reason">Detalle:</label>
+                        <textarea type="reason" id="reason" rows="5" cols="40"></textarea>
+
+                        <input type="button" class="index-header-boton" value="Enviar">
+                    </form>             
+            </article>
+        </div>  
+    </main>  
+
+    <footer>
+        <h2 id="redes">Nuestras Redes</h2>
+        
+        <!-- Redes Sociales -->
+
+        <nav>
+            <ul class="footer-redes">
+                <li>
+                    <a 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        href="https://x.com/">
+                        <img src="../img/twitter.png" alt="twitter">
+                    </a>
+                    <p>@ElTesoro.Restaurant</p>
+                </li>
+                <li>
+                    <a 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        href="https://www.instagram.com/">
+                        <img src="../img/instagram.png" alt="instagram">
+                    </a>
+                    <p>@ElTesoro.Restaurant</p>                   
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./eventos.html">Eventos</a></li>
+                <li><a href="./sucursales.html">Sucursales</a></li>
+                <li><a href="./reviews.html">Reseñas</a></li>    
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>        
+    </footer>
+
+</body>
+</html>
