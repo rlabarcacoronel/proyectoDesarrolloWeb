@@ -160,11 +160,74 @@ footer img {
   font-size: 1rem;
 }
 
+/* ———— Contacto ———— */
 .main-card-flex, .main-title-container, .main-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.main-card, .form-card {
+  background-color: rgb(255, 245, 217);
+  margin: 8px 5px;
+}
+
+.form-card {
+  padding: 10px;
+  border: 20px rgb(255, 245, 217);
+  border-radius: 10px;
+  width: 40rem;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 1rem 1.5rem;
+  max-width: 600px;
+  width: min(600px, 100%);
+  box-sizing: border-box;
+}
+.formulario label {
+  text-align: right;
+  padding-top: 0.5rem;
+  font-weight: 500;
+}
+.formulario input:not([type=button]), .formulario select, .formulario textarea {
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #EDD495;
+  border-radius: 4px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+.formulario input:not([type=button]):focus, .formulario select:focus, .formulario textarea:focus {
+  outline: none;
+  border-color: #754727;
+}
+.formulario input[type=button] {
+  grid-column: 2;
+}
+.formulario textarea {
+  resize: vertical;
+}
+.formulario input[type=submit] {
+  grid-column: 2;
+  width: fit-content;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+}
+
+.main-card-flex, .main-title-container, .main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-card, .form-card {
+  background-color: rgb(255, 245, 217);
+  margin: 8px 5px;
 }
 
 /* —————————————— General —————————————— */
@@ -223,12 +286,10 @@ h3 {
 }
 
 .main-card {
-  background-color: rgb(255, 245, 217);
-  width: 20rem;
   padding: 10px;
   border: 20px rgb(255, 245, 217);
   border-radius: 10px;
-  margin: 8px 5px;
+  width: 20rem;
 }
 .main-card h3, .main-card p {
   margin: 0.5rem;

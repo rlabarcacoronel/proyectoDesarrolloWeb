@@ -1,6 +1,7 @@
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/eventos";
+@import "./layout/contacto";
 @import "./utilities/extends";
 @import "./utilities/mixins";
 
@@ -73,10 +74,9 @@ h3{
 }
 
 .main-card{
-    background-color: $light-yellow;
-    width: 20rem;
+    @extend %card-base;
     @include paddingAndBorder(10px, 20px $light-yellow, 10px);
-    margin: 8px 5px;
+    width: 20rem;
 
     h3, p{
         margin:0.5rem;
